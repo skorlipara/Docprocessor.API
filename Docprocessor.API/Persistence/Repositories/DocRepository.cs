@@ -17,5 +17,24 @@ namespace Docprocessor.API.Persistence.Repositories
                                  .AsNoTracking()
                                  .ToListAsync();
         }
+        public async Task AddAsync(Doc doc)
+        {
+            await _context.Docs.AddAsync(doc);
+        }
+
+        public async Task<Doc> FindByIdAsync(int id)
+        {
+            return await _context.Docs.FindAsync(id);
+        }
+
+        public void Update(Doc doc)
+        {
+            _context.Docs.Update(doc);
+        }
+
+        public void Remove(Doc doc)
+        {
+            _context.Docs.Remove(doc);
+        }
     }
 }
