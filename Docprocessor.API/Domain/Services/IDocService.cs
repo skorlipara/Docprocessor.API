@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 using Docprocessor.API.Domain.Models;
+using Docprocessor.API.Domain.Services.Communication;
 
 namespace Docprocessor.API.Domain.Services
 {

@@ -4,7 +4,7 @@ using Docprocessor.API.Domain.Models;
 
 namespace Docprocessor.API.Persistence.Contexts
 {
-    public class AppDbContext
+    public class AppDbContext : DbContext
     {
         public DbSet<Doc> Docs { get; set; }
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }

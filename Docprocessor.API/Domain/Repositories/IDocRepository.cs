@@ -4,7 +4,7 @@ using Docprocessor.API.Domain.Models;
 
 namespace Docprocessor.API.Domain.Repositories
 {
-    interface IDocRepository
+    public interface IDocRepository
     {
         Task<IEnumerable<Doc>> ListAsync();
         Task AddAsync(Doc doc);
